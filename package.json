@@ -1,0 +1,24 @@
+{ "name": "pimatic-redirect",
+  "description": "redirect plugin for pimatic",
+  "author": "Oliver Schneider <oliverschneider89+sweetpi@gmail.com> (http://sweetpi.de)",
+  "main": "redirect.coffee",
+  "files": [
+    "redirect.coffee",
+    "README.md"
+  ],
+  "version": "0.1.0",
+  "homepage": "http://github.com/pimatic/pimatic",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pimatic/pimatic.git/node_modules/pimatic-redirect"
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "pimatic": "~0.1.0"
+  },
+  "engines": {
+    "node": ">0.8.x",
+    "npm": ">1.1.x"
+  }
+}
