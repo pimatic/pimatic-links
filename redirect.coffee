@@ -1,4 +1,9 @@
 module.exports = (env) ->
+
+  convict = env.require "convict"
+  Q = env.require 'q'
+  assert = env.require 'cassert'
+
   class RedirectFrontend extends env.plugins.Plugin
 
     init: (app, server, @config) =>
