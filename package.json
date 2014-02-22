@@ -7,7 +7,7 @@
     "redirect.coffee",
     "README.md"
   ],
-  "version": "0.5.1",
+  "version": "0.6.0",
   "homepage": "http://github.com/pimatic/pimatic",
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
   "dependencies": {
   },
   "peerDependencies": {
-    "pimatic": "0.5.*"
+    "pimatic": "0.6.*"
   },
   "engines": {
     "node": ">0.8.x",
