@@ -1,6 +1,6 @@
 module.exports = (env) ->
 
-  Q = env.require 'q'
+  Promise = env.require 'bluebird'
   assert = env.require 'cassert'
 
   class RedirectFrontend extends env.plugins.Plugin
