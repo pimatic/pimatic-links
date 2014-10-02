@@ -48,5 +48,4 @@ $(document).on( "click", ".links-plugin", (event) ->
     jQuery.mobile.changePage '#links-page', transition: 'slide'
     event.preventDefault()
     return false
-  console.log "link clicked", a
 )
