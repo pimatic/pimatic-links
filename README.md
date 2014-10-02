@@ -11,7 +11,7 @@ Config:
   "plugin": "links",
   "links": [
     {
-      "title": "pimaitc.org",
+      "title": "pimatic.org",
       "url": "http://pimatic.org"
     },
     {
