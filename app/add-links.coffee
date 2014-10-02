@@ -27,7 +27,8 @@ $(document).on( "pagebeforecreate", (event) ->
             <a 
               href="#{link.url}" 
               data-transition="slidefade" 
-              class="ui-btn ui-btn-f ui-btn-icon-right ui-icon-carat-r">
+              class="ui-btn ui-btn-f ui-btn-icon-right ui-icon-carat-r"
+              target="_blank">
                 #{link.title}
             </a>
           </li>
