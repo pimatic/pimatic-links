@@ -1,17 +1,23 @@
-pimatic redirect plugin
+pimatic links plugin
 =======================
 
-Redirect urls:
+Adds links to the main menu in the mobile frontend.
 
 Config:
 -------
 
+```json
+{
+  "plugin": "links",
+  "links": [
     {
-      "plugin": "redirect",
-      "routes": [
-        { 
-          "path": "/printer",
-          "route": "http://192.168.1.2:631"
-        }
-      ]
-    }
+      "title": "pimaitc.org",
+      "url": "http://pimatic.org"
+    },
+    {
+      "title": "google.com",
+      "url": "http://google.com"
+    },       
+  ]
+}
+```
