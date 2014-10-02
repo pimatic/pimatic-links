@@ -27,8 +27,8 @@ $(document).on( "pagebeforecreate", (event) ->
             <a 
               href="#{link.url}" 
               data-transition="slidefade" 
-              class="ui-btn ui-btn-f ui-btn-icon-right ui-icon-carat-r"
-              target="_blank">
+              class="ui-btn ui-btn-f ui-btn-icon-right ui-icon-carat-r links-plugin"
+              target="#{link.target or '_blank'}">
                 #{link.title}
             </a>
           </li>
@@ -37,4 +37,16 @@ $(document).on( "pagebeforecreate", (event) ->
       pimatic.try => ul.listview('refresh')
     )
   )
+)
+
+$(document).on( "click", ".links-plugin", (event) ->
+  a = $(this)
+  if a.attr('target') is 'iframe'
+    iframe = $('#links-iframe')
+    iframe.attr('src', a.attr('href'))
+    $('#links-page h3').text(a.text())
+    jQuery.mobile.changePage '#links-page', transition: 'slide'
+    event.preventDefault()
+    return false
+  console.log "link clicked", a
 )

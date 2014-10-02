@@ -11,12 +11,14 @@ Config:
   "plugin": "links",
   "links": [
     {
-      "title": "pimatic.org",
-      "url": "http://pimatic.org"
+      "title": "Rules Guide",
+      "url": "http://pimatic.org/guide/usage/rules/",
+      "target": "iframe"
     },
     {
       "title": "google.com",
-      "url": "http://google.com"
+      "url": "http://google.com",
+      "target": "_blank"
     },       
   ]
 }

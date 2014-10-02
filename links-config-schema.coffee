@@ -15,4 +15,12 @@ module.exports = {
           url:
             description: "The url to link to, should start with http:// or https://"
             type: "string"
+          target:
+            description: """
+              The default link target, can be a new window ("_blank"), replace the page ("_self")
+              or embedded into a frontend page ("iframe")
+            """
+            type: "string"
+            default: "_blank"
+            enum: ["_blank", "iframe", "_self"]
 }
