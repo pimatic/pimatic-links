@@ -3,10 +3,9 @@
   height: 100%;
   margin: 0;
   border: none;
+  display: block;
 }
 
 #links-page .ui-content {
   padding: 0;
-  overflow: hidden;
-
 }
