@@ -11,8 +11,7 @@ $(document).on( "pagebeforecreate", (event) ->
       global: false
     }).done( (links) ->
       if linksAdded then return
-      ul = $('#nav-panel ul')
-      ul.append("""
+      divider = $ """
         <li 
             data-theme="f" 
             data-role="list-divider" 
@@ -20,9 +19,11 @@ $(document).on( "pagebeforecreate", (event) ->
             class="ui-li-divider ui-bar-f">
               Links
         </li>
-      """)
+      """
+      $('#nav-panel ul li.ui-li-divider:last').before(divider)
+      last = divider
       for link in links
-        ul.append("""
+        li = $ """
           <li data-theme="f">
             <a 
               href="#{link.url}" 
@@ -32,7 +33,9 @@ $(document).on( "pagebeforecreate", (event) ->
                 #{link.title}
             </a>
           </li>
-        """)
+        """
+        last.after(li)
+        last = li
       linksAdded = yes
       pimatic.try => ul.listview('refresh')
     )
