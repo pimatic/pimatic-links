@@ -1,4 +1,5 @@
-{ "name": "pimatic-links",
+{
+  "name": "pimatic-links",
   "description": "Adds links to the main menu in the mobile frontend.",
   "author": "Oliver Schneider <oliverschneider89+sweetpi@gmail.com> (http://sweetpi.de)",
   "main": "links.coffee",
@@ -10,14 +11,13 @@
     "links-config-schema.coffee",
     "LICENSE"
   ],
-  "version": "0.8.5",
+  "version": "0.8.6",
   "homepage": "http://github.com/pimatic/pimatic",
   "repository": {
     "type": "git",
     "url": "git://github.com/pimatic/pimatic-links.git"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "license": "GPL-2.0",
   "configSchema": "links-config-schema.coffee",
   "peerDependencies": {
