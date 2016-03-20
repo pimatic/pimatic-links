@@ -6,7 +6,6 @@ module.exports = (env) ->
   class LinksPlugin extends env.plugins.Plugin
 
     init: (app, @framework, @config) =>
-      _this = this
 
       @framework.on "after init", =>
         mobileFrontend = @framework.pluginManager.getPlugin 'mobile-frontend'

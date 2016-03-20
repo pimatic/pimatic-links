@@ -7,7 +7,8 @@
     "app",
     "links.coffee",
     "README.md",
-    "links-config-schema.coffee"
+    "links-config-schema.coffee",
+    "LICENSE"
   ],
   "version": "0.8.5",
   "homepage": "http://github.com/pimatic/pimatic",
@@ -17,9 +18,10 @@
   },
   "dependencies": {
   },
+  "license": "GPL-2.0",
   "configSchema": "links-config-schema.coffee",
   "peerDependencies": {
-    "pimatic": "0.8.*"
+    "pimatic": ">=0.8.0 <1.0.0"
   },
   "engines": {
     "node": ">0.8.x",
